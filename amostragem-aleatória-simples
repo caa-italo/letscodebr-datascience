@@ -1,0 +1,13 @@
+import random
+
+def amostragem_aleatoria(total_populacao, tamanho_amostra):
+    populacao = list(range(1, total_populacao + 1))
+    amostra = random.sample(populacao, tamanho_amostra)
+    return amostra
+
+# Exemplo de uso
+total_alunos = 50
+tamanho_amostra = 10
+
+amostra_selecionada = amostragem_aleatoria(total_alunos, tamanho_amostra)
+print("Amostra selecionada:", amostra_selecionada)
